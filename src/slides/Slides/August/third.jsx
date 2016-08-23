@@ -1,5 +1,5 @@
 import React from 'react'
-import Screen from 'slides/Screen'
+import Screen from 'Screen'
 import * as Button from '@klarna/ui/Button'
 import { Content } from '@klarna/ui/Block'
 import Link from '@klarna/ui/Link'

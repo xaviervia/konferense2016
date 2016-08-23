@@ -1,5 +1,5 @@
 import React from 'react'
-import Screen from 'slides/Screen'
+import Screen from 'Screen'
 import * as Title from '@klarna/ui/Title'
 
 export default function Buttons () {

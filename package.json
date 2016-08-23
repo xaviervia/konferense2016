@@ -29,6 +29,7 @@
     "@klarna/ui": "git+ssh://git@github.com/klarna/ui.git",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
+    "react-gist-embed": "0.0.3",
     "sagui": "^6.4.1"
   }
 }

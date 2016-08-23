@@ -1,10 +1,11 @@
 import React from 'react'
 import * as Menu from '@klarna/ui/Menu'
 import * as August from './August'
+import * as Dialog from './Dialog'
 import Introduction from './Introduction'
 import Text from './Text'
 
-import Screen from '../Screen'
+import Screen from 'Screen'
 import * as Title from '@klarna/ui/Title'
 
 import styles from './styles.css'
@@ -29,7 +30,8 @@ export default React.createClass({
       august1: <August.first />,
       august2: <August.second />,
       august3: <August.third />,
-      text: <Text />
+      text: <Text />,
+      dialog1: <Dialog.first />
     }
 
     return (
@@ -44,7 +46,8 @@ export default React.createClass({
             { key: 'august1', label: 'August #1' },
             { key: 'august2', label: 'August #2' },
             { key: 'august3', label: 'August #3' },
-            { key: 'text', label: 'Text' }
+            { key: 'text', label: 'Text' },
+            { key: 'dialog1', label: 'Dialog #1' }
           ]}
         />
         {slides[currentSlide]}
