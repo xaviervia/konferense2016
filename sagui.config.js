@@ -3,7 +3,10 @@
  * see: http://sagui.js.org/
  */
 module.exports = {
-  pages: ['index'],
+  pages: [
+    'exercise/index',
+    'slides/index'
+  ],
 
   javaScript: {
     transpileDependencies: ['@klarna/ui']
