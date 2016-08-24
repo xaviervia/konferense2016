@@ -8,28 +8,24 @@ import styles from './styles.css'
 
 export default React.createClass({
   getInitialState () {
-    return { step: 'initial' }
+    return { open: 'initial' }
   },
 
   render () {
-    const { step } = this.state
+    const { open } = this.state
 
     return (
       <div>
         <Screen>
-          <Button.Primary onClick={() => this.setState({ step: 'window' })}>
+          <Button.Primary onClick={() => this.setState({ open: true })}>
             Open
-          </Button.Primary>
-
-          <Button.Primary onClick={() => this.setState({ step: 'opposite' })}>
-            Alternative
           </Button.Primary>
         </Screen>
 
-        <Dialog.Overlay show={step === 'window'}>
+        <Dialog.Overlay show={open}>
           <Dialog.Main>
             <Dialog.Icon>
-              <Close onClick={() => this.setState({ step: 'initial' })} />
+              <Close onClick={() => this.setState({ open: false })} />
             </Dialog.Icon>
 
             <Dialog.Content className={styles.content}>
@@ -40,27 +36,7 @@ export default React.createClass({
 
             <Dialog.Footer>
               <Button.Primary className={styles.button}>
-                Complete the sequence
-              </Button.Primary>
-            </Dialog.Footer>
-          </Dialog.Main>
-        </Dialog.Overlay>
-
-        <Dialog.Overlay show={step === 'opposite'}>
-          <Dialog.Main>
-            <Dialog.Icon>
-              <Close onClick={() => this.setState({ step: 'initial' })} />
-            </Dialog.Icon>
-
-            <Dialog.Content className={styles.content}>
-              <Title.Primary>
-                Let's start
-              </Title.Primary>
-            </Dialog.Content>
-
-            <Dialog.Footer>
-              <Button.Primary className={styles.button}>
-                Complete the sequence
+                Complete
               </Button.Primary>
             </Dialog.Footer>
           </Dialog.Main>

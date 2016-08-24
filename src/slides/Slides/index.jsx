@@ -1,9 +1,7 @@
 import React from 'react'
 import * as Menu from '@klarna/ui/Menu'
-import * as August from './August'
-import * as Dialog from './Dialog'
+import * as Step from './August'
 import Introduction from './Introduction'
-import Text from './Text'
 
 import Screen from 'Screen'
 import * as Title from '@klarna/ui/Title'
@@ -27,11 +25,12 @@ export default React.createClass({
           </Title.Primary>
         </Screen>
       ),
-      august1: <August.first />,
-      august2: <August.second />,
-      august3: <August.third />,
-      text: <Text />,
-      dialog1: <Dialog.first />
+      step1: <Step.first />,
+      step2: <Step.second />,
+      step3: <Step.third />,
+      step4: <Step.fourth />,
+      step5: <Step.fifth />,
+      step6: <Step.sixth />
     }
 
     return (
@@ -43,11 +42,12 @@ export default React.createClass({
           options={[
             { key: 'introduction', label: 'Introduction' },
             { key: 'react', label: 'React' },
-            { key: 'august1', label: 'August #1' },
-            { key: 'august2', label: 'August #2' },
-            { key: 'august3', label: 'August #3' },
-            { key: 'text', label: 'Text' },
-            { key: 'dialog1', label: 'Dialog #1' }
+            { key: 'step1', label: 'Step #1' },
+            { key: 'step2', label: 'Step #2' },
+            { key: 'step3', label: 'Step #3' },
+            { key: 'step4', label: 'Step #4' },
+            { key: 'step5', label: 'Step #5' },
+            { key: 'step6', label: 'Step #6' }
           ]}
         />
         {slides[currentSlide]}

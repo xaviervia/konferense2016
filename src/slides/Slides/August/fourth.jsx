@@ -1,5 +1,6 @@
 import React from 'react'
 import Screen from 'Screen'
+import * as Button from '@klarna/ui/Button'
 import * as Title from '@klarna/ui/Title'
 import Subtitle from '@klarna/ui/Subtitle'
 import TextLabel from '@klarna/ui/TextLabel'
@@ -22,7 +23,7 @@ import styles from './styles.css'
  * - Inverted coloring
  */
 
-export default function Text () {
+export default function Step () {
   return (
     <Screen>
       <Content>
@@ -65,6 +66,14 @@ export default function Text () {
             </td>
           </tr>
         </table>
+
+        <Button.Secondary className={styles.left}>
+          Go back
+        </Button.Secondary>
+
+        <Button.Primary>
+          Continue
+        </Button.Primary>
 
         <Block blue className={styles.background}>
           <TextLabel margins color='white'>Price</TextLabel>
