@@ -1,15 +1,6 @@
 import React from 'react'
 import Screen from 'Screen'
-import * as Button from '@klarna/ui/Button'
-import { Content } from '@klarna/ui/Block'
-import * as Title from '@klarna/ui/Title'
-import Fieldset from '@klarna/ui/Fieldset'
-import UncontrolledField from '@klarna/ui/uncontrolled/Field'
-import UncontrolledDropdown from '@klarna/ui/uncontrolled/Dropdown'
-import * as UncontrolledSwitch from '@klarna/ui/uncontrolled/Switch'
-import * as Dialog from '@klarna/ui/Dialog'
-import { Close } from '@klarna/ui/IconButton'
-import Subtitle from '@klarna/ui/Subtitle'
+import * as UI from '@klarna/ui'
 
 export default React.createClass({
   getInitialState () {
@@ -19,33 +10,33 @@ export default React.createClass({
   render () {
     return (
       <Screen>
-        <Content>
-          <Button.Primary onClick={() => this.setState({ open: true })}>
+        <UI.Block.Content>
+          <UI.Button.Primary onClick={() => this.setState({ open: true })}>
             Open
-          </Button.Primary>
-        </Content>
+          </UI.Button.Primary>
+        </UI.Block.Content>
 
         <form>
-          <Dialog.Overlay show={this.state.open}>
-            <Dialog.Main>
-              <Dialog.Icon>
-                <Close onClick={() => this.setState({ open: false })} />
-              </Dialog.Icon>
+          <UI.Dialog.Overlay show={this.state.open}>
+            <UI.Dialog.Main>
+              <UI.Dialog.Icon>
+                <UI.IconButton.Close onClick={() => this.setState({ open: false })} />
+              </UI.Dialog.Icon>
 
-              <Dialog.Content>
-                <Title.Primary margins>
+              <UI.Dialog.Content>
+                <UI.Title.Primary margins>
                   Enter your data
-                </Title.Primary>
+                </UI.Title.Primary>
 
-                <Subtitle margins>Address</Subtitle>
-                <Fieldset margins>
-                  <UncontrolledField
+                <UI.Subtitle margins>Address</UI.Subtitle>
+                <UI.Fieldset margins>
+                  <UI.UncontrolledField
                     name='given-name' label='Given name'
                     top left size='1/2' />
-                  <UncontrolledField
+                  <UI.UncontrolledField
                     name='last-name' label='Last name'
                     top right size='1/2' />
-                  <UncontrolledDropdown
+                  <UI.UncontrolledDropdown
                     name='planet' label='Planet'
                     options={[
                       { key: '', label: 'Pick one', hidden: true },
@@ -53,22 +44,22 @@ export default React.createClass({
                       { key: 'mars', label: 'Mars' }
                     ]}
                     bottom />
-                </Fieldset>
+                </UI.Fieldset>
 
-                <Fieldset margins>
-                  <UncontrolledSwitch.Checkbox name='agreed'>
+                <UI.Fieldset margins>
+                  <UI.UncontrolledSwitch.Checkbox name='agreed'>
                     Do you agree with the terms?
-                  </UncontrolledSwitch.Checkbox>
-                </Fieldset>
-              </Dialog.Content>
+                  </UI.UncontrolledSwitch.Checkbox>
+                </UI.Fieldset>
+              </UI.Dialog.Content>
 
-              <Dialog.Footer>
-                <Button.Primary style={{ width: '100%' }}>
+              <UI.Dialog.Footer>
+                <UI.Button.Primary style={{ width: '100%' }}>
                   Continue
-                </Button.Primary>
-              </Dialog.Footer>
-            </Dialog.Main>
-          </Dialog.Overlay>
+                </UI.Button.Primary>
+              </UI.Dialog.Footer>
+            </UI.Dialog.Main>
+          </UI.Dialog.Overlay>
         </form>
       </Screen>
     )

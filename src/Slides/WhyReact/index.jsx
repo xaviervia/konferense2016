@@ -1,6 +1,6 @@
 import React from 'react'
 import Screen from 'Screen'
-import * as Title from '@klarna/ui/Title'
+import { Title } from '@klarna/ui'
 import GistEmbed from 'react-gist-embed'
 import styles from './styles.css'
 

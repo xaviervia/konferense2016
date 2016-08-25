@@ -1,5 +1,5 @@
 import React from 'react'
-import * as Menu from '@klarna/ui/Menu'
+import { Menu } from '@klarna/ui'
 import Introduction from './Introduction'
 import WhyReact from './WhyReact'
 import * as Step from './Step'

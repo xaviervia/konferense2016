@@ -1,6 +1,6 @@
 import React from 'react'
 import Screen from 'Screen'
-import * as Title from '@klarna/ui/Title'
+import * as UI from '@klarna/ui'
 import styles from './styles.css'
 
 export default React.createClass({
@@ -11,15 +11,15 @@ export default React.createClass({
   render () {
     return [
       (<Screen onClick={() => this.setState({ current: 1 })}>
-        <Title.Primary margins>
+        <UI.Title.Primary margins>
           @klarna/ui components
-        </Title.Primary>
+        </UI.Title.Primary>
       </Screen>),
 
       (<Screen>
-        <Title.Primary margins>
+        <UI.Title.Primary margins>
           Join <strong className={styles.strong}>#ui-workshop</strong>
-        </Title.Primary>
+        </UI.Title.Primary>
       </Screen>)
     ][this.state.current]
   }
