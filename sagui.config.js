@@ -4,9 +4,7 @@
  */
 module.exports = {
   pages: [
-    'code/index',
-    'exercise/index',
-    'slides/index'
+    'index',
   ],
 
   javaScript: {
