@@ -3,6 +3,7 @@ import { Menu } from '@klarna/ui'
 import Introduction from './Introduction'
 import WhyReact from './WhyReact'
 import * as Step from './Step'
+import ThankYou from './ThankYou'
 import styles from './styles.css'
 
 export default React.createClass({
@@ -20,7 +21,8 @@ export default React.createClass({
       step2: <Step.second />,
       step3: <Step.third />,
       step4: <Step.fourth />,
-      step5: <Step.fifth />
+      step5: <Step.fifth />,
+      thankYou: <ThankYou />
     }
 
     return (
@@ -36,7 +38,8 @@ export default React.createClass({
             { key: 'step2', label: 'Step #2' },
             { key: 'step3', label: 'Step #3' },
             { key: 'step4', label: 'Step #4' },
-            { key: 'step5', label: 'Step #5' }
+            { key: 'step5', label: 'Step #5' },
+            { key: 'thankYou', label: 'Thank You' }
           ]}
         />
         {slides[currentSlide]}
