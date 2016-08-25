@@ -20,8 +20,7 @@ export default React.createClass({
       step2: <Step.second />,
       step3: <Step.third />,
       step4: <Step.fourth />,
-      step5: <Step.fifth />,
-      step6: <Step.sixth />
+      step5: <Step.fifth />
     }
 
     return (
@@ -37,8 +36,7 @@ export default React.createClass({
             { key: 'step2', label: 'Step #2' },
             { key: 'step3', label: 'Step #3' },
             { key: 'step4', label: 'Step #4' },
-            { key: 'step5', label: 'Step #5' },
-            { key: 'step6', label: 'Step #6' }
+            { key: 'step5', label: 'Step #5' }
           ]}
         />
         {slides[currentSlide]}

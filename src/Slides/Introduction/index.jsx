@@ -1,33 +1,26 @@
 import React from 'react'
 import Screen from 'Screen'
 import * as Title from '@klarna/ui/Title'
-// import * as Paragraph from '@klarna/ui/Paragraph'
+import styles from './styles.css'
 
 export default React.createClass({
   getInitialState () {
-    return {
-      subSlide: 'main'
-    }
+    return { current: 0 }
   },
 
   render () {
-    const getVisibility = (key) => ({
-      display: key === this.state.subSlide ? 'block' : 'none'
-    })
-
-    return (
-      <Screen>
-        <Title.Primary
-          onClick={() => this.setState({ subSlide: 'join' })}
-          style={getVisibility('main')}
-          margins>
+    return [
+      (<Screen onClick={() => this.setState({ current: 1 })}>
+        <Title.Primary margins>
           @klarna/ui components
         </Title.Primary>
+      </Screen>),
 
-        <Title.Primary style={getVisibility('join')} margins>
-          Join #ui-workshop
+      (<Screen>
+        <Title.Primary margins>
+          Join <strong className={styles.strong}>#ui-workshop</strong>
         </Title.Primary>
-      </Screen>
-    )
+      </Screen>)
+    ][this.state.current]
   }
 })
