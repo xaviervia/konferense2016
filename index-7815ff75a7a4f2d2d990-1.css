@@ -1,0 +1,49 @@
+.Screen-screen-1VQUW {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+          justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+.Slides-Introduction-strong-29u3u {
+  font-weight: 600;
+}
+.Slides-WhyReact-strong-sOh7r {
+  font-weight: 600;
+}
+.Slides-Step-left-2uWCs {
+  margin-right: 20px;
+}
+
+.Slides-Step-background-1qWzI {
+  border-radius: 10px;
+  margin-left: -30px;
+  margin-right: -30px;
+  margin-top: 40px;
+  padding-bottom: 35px;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.Slides-Step-dialogTitle-36inY {
+  text-align: center;
+}
+
+.Slides-Step-dialogButton-1Qgfm {
+  width: 100%;
+}
+.Slides-menu-1gGV- {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+  width: calc(100vw - 40px);
+}
+
+/*# sourceMappingURL=index-7815ff75a7a4f2d2d990-1.css.map*/
