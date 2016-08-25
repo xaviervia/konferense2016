@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './styles.css'
 
-export default function Screen ({children}) {
-  return <div className={styles.screen}>{children}</div>
+export default function Screen ({children, ...props}) {
+  return <div className={styles.screen} {...props}>{children}</div>
 }
