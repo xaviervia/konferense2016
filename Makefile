@@ -1,3 +1,3 @@
 gh-pages:
-  npm run build
-  mv dist/* .
+	npm run build
+	mv dist/* .
