@@ -28,6 +28,7 @@ export default React.createClass({
       </Screen>),
 
       (<Screen
+        className={'for-gist'}
         onClick={() => this.setState({ current: 3 })}>
         <div>
           <GistEmbed gistId='5bea62f8c89448335a4b75b5e826a2c5' />
@@ -37,14 +38,12 @@ export default React.createClass({
       (<Screen
         onClick={() => this.setState({ current: 4 })}>
         <Title.Primary margins>
-          Easy. Stateless.
+          Easy. Popular.
         </Title.Primary>
       </Screen>),
 
       (<Screen>
-        <Title.Primary margins>
-          Easy. Stateless. Standard.
-        </Title.Primary>
+        <iframe style={{width: '160px', height: '30px', border: 0}} src='https://ghbtns.com/github-btn.html?user=facebook&repo=react&type=star&count=true&size=large' frameborder='0' scrolling='0' width='160px' height='30px'></iframe>
       </Screen>)
     ][this.state.current]
   }
