@@ -23,6 +23,15 @@ export default React.createClass({
         </UI.Title.Primary>
       </Screen>),
 
+      (<Screen className={styles.postParrots}
+        onClick={() => this.setState({ current: 3 })}>
+        <UI.Title.Primary
+          className={styles.postParrotsTitle}
+          margins>
+          Let the parrot party!
+        </UI.Title.Primary>
+      </Screen>),
+
       (<Step.fifth />)
     ][this.state.current]
   }
