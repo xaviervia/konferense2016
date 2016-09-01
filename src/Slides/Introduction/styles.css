@@ -1,3 +1,16 @@
 .strong {
   font-weight: 600;
 }
+
+.postParrots {
+  background: black url(./parrot.gif);
+  z-index: 10;
+}
+
+.postParrotsTitle {
+  color: white !important;
+  background: black;
+  font-family: 'Permanent Marker' !important;
+  padding: 20px 40px !important;
+  text-shadow: white 0 0 2px;
+}
