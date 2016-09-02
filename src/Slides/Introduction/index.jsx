@@ -23,8 +23,14 @@ export default React.createClass({
         </UI.Title.Primary>
       </Screen>),
 
+      (<Screen onClick={() => this.setState({ current: 3 })}>
+        <UI.Title.Primary margins>
+          (static) UIs are easy
+        </UI.Title.Primary>
+      </Screen>),
+
       (<Screen className={styles.postParrots}
-        onClick={() => this.setState({ current: 3 })}>
+        onClick={() => this.setState({ current: 4 })}>
         <UI.Title.Primary
           className={styles.postParrotsTitle}
           margins>
