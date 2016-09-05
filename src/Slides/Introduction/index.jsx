@@ -19,18 +19,36 @@ export default React.createClass({
 
       (<Screen onClick={() => this.setState({ current: 2 })}>
         <UI.Title.Primary margins>
-          Join <strong className={styles.strong}>#ui-workshop</strong>
+          (static) UIs are easy
         </UI.Title.Primary>
       </Screen>),
 
       (<Screen onClick={() => this.setState({ current: 3 })}>
         <UI.Title.Primary margins>
-          (static) UIs are easy
+          Consistent by Design
         </UI.Title.Primary>
       </Screen>),
 
+      (<Screen onClick={() => this.setState({ current: 4 })}>
+        <UI.Title.Primary margins>
+          Join <strong className={styles.strong}>#ui-workshop</strong>
+        </UI.Title.Primary>
+      </Screen>),
+
+      (<Screen onClick={() => this.setState({ current: 5 })}>
+        <div style={{textAlign: 'center'}}>
+          <UI.Title.Primary margins>
+            If you need help <strong className={styles.strong}>please ask</strong>
+          </UI.Title.Primary>
+          <UI.Title.Primary margins>
+            Anytime in the #ui-workshop channel<br />
+            Aloud after each Step
+          </UI.Title.Primary>
+        </div>
+      </Screen>),
+
       (<Screen className={styles.postParrots}
-        onClick={() => this.setState({ current: 4 })}>
+        onClick={() => this.setState({ current: 6 })}>
         <UI.Title.Primary
           className={styles.postParrotsTitle}
           margins>
