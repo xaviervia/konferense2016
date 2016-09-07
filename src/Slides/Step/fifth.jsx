@@ -25,10 +25,11 @@ export default React.createClass({
 
               <UI.Dialog.Content>
                 <UI.Title.Primary margins>
-                  Enter your data
+                  The title is primary
                 </UI.Title.Primary>
-
-                <UI.Subtitle margins>Address</UI.Subtitle>
+                <UI.Subtitle margins>
+                  Just trying to fill up space
+                </UI.Subtitle>
                 <UI.Fieldset margins>
                   <UI.UncontrolledField
                     name='given-name' label='Given name'
@@ -37,13 +38,26 @@ export default React.createClass({
                     name='last-name' label='Last name'
                     top right size='1/2' />
                   <UI.UncontrolledDropdown
-                    name='planet' label='Planet'
+                    bottom
+                    label='Lorem ipsum'
+                    name='dropdown-lorem-ipsum'
                     options={[
-                      { key: '', label: 'Pick one', hidden: true },
-                      { key: 'earth', label: 'Earth' },
-                      { key: 'mars', label: 'Mars' }
+                      {
+                        disabled: true,
+                        hidden: true,
+                        key: '',
+                        label: 'Pick one!'
+                      },
+                      {
+                        key: 'lorem',
+                        label: 'Lorem'
+                      },
+                      {
+                        key: 'ipsum',
+                        label: 'Ipsum'
+                      }
                     ]}
-                    bottom />
+                  />
                 </UI.Fieldset>
 
                 <UI.Fieldset margins>
@@ -55,7 +69,7 @@ export default React.createClass({
 
               <UI.Dialog.Footer>
                 <UI.Button.Primary style={{ width: '100%' }}>
-                  Continue
+                  Submit
                 </UI.Button.Primary>
               </UI.Dialog.Footer>
             </UI.Dialog.Main>

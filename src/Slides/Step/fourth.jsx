@@ -45,13 +45,26 @@ export default function Buttons () {
               name='last-name' label='Last name'
               top right size='1/2' />
             <UI.UncontrolledDropdown
-              name='planet' label='Planet'
+              bottom
+              label='Lorem ipsum'
+              name='dropdown-lorem-ipsum'
               options={[
-                { key: '', label: 'Pick one', hidden: true },
-                { key: 'earth', label: 'Earth' },
-                { key: 'mars', label: 'Mars' }
+                {
+                  disabled: true,
+                  hidden: true,
+                  key: '',
+                  label: 'Pick one!'
+                },
+                {
+                  key: 'lorem',
+                  label: 'Lorem'
+                },
+                {
+                  key: 'ipsum',
+                  label: 'Ipsum'
+                }
               ]}
-              bottom />
+            />
           </UI.Fieldset>
 
           <UI.Fieldset margins>
